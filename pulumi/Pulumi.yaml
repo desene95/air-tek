@@ -1,0 +1,6 @@
+name: airtek_project
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Infrastructure configuration for air-tek project
