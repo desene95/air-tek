@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE      COMMAND                  CREATED       STATUS         PORTS                    NAMES
+6de06a94ecf7   infraweb   "dotnet infra-web.dll"   2 hours ago   Up 4 minutes   0.0.0.0:3000->5000/tcp   infra-team-test_infraweb_1
+00589a14059c   infraapi   "dotnet infra-api.dll"   2 hours ago   Up 4 minutes   0.0.0.0:5000->5000/tcp   infra-team-test_infraapi_1
+c1c9c9b568f2   server     "uvicorn chromadb.ap…"   2 weeks ago   Up 2 weeks     0.0.0.0:8000->8000/tcp   chroma_server_1
