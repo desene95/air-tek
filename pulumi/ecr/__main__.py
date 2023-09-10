@@ -1,7 +1,7 @@
 """An AWS Python Pulumi program"""
 
 import pulumi
-from pulumi_aws import ecr 
+from pulumi_aws import ecr
 
 cont_registry = ecr.Repository("air_tek_registry")
 
