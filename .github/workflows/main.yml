@@ -32,7 +32,7 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: air_tek_app_1
-          environment_name: eb-env2-6141a10
+          environment_name: eb-env2-06bd1be
           version_label: "eb-env2-6141a10-${{ steps.format-time.outputs.replaced }}"
           region: ca-central-1
           deployment_package: deploy.zip
