@@ -1,0 +1,11 @@
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/infra-api
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/appsettings.Development.json
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/appsettings.json
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/infra-api.dll
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/infra-api.deps.json
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/infra-api.runtimeconfig.json
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/infra-api.pdb
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/Microsoft.OpenApi.dll
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/damianesene/air-tek/infra-team-test/infra-api/bin/Debug/net5.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
