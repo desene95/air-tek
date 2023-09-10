@@ -100,7 +100,7 @@ eb_app1 = elasticbeanstalk.Application("eb-app",
 
 eb_env1 = elasticbeanstalk.Environment("eb-env2",
      application= eb_app1.name,
-     solution_stack_name="64bit Windows Server 2019 v2.11.7 running IIS 10.0",
+     solution_stack_name="64bit Amazon Linux 2023 v4.0.0 running Docker",
      settings=[
          aws.elasticbeanstalk.EnvironmentSettingArgs(
              namespace="aws:ec2:vpc",
