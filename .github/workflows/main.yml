@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Generate Deployment Package 
-        run: zip -r deploy.zip infra-team-test/infra-api/
+        run: zip -r deploy.zip infra-team-test/infra-web/
         
       - name: Get timestamp
         uses: gerred/actions/current-time@master
