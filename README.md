@@ -12,3 +12,4 @@ Important files used:
 2. push_to_ecr.sh : shell script that helped push docker images to ECR
 3. elasticbanestalk/__main__.py: contains pulumi code or beanstalk deployment
 4. ecr/__main__.py: contains pulumi code or ECR deployment. 
+5. Snapshot of final output on browser, security groups, Load balancer listeners and architectural diagram is located in images/ folder
