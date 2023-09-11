@@ -56,6 +56,11 @@ iam.RolePolicyAttachment('instance_profile',
                         )
 
 
+iam.RolePolicyAttachment('instance_profile-1',
+                          role=eb_ip_role.name,
+                          policy_arn='arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess'
+                        )
+
 # Create an AWS resource (IAM Instance Profile)
 
 
@@ -94,12 +99,12 @@ public_subnet_route_table_association = aws.ec2.RouteTableAssociation('public_su
      route_table_id=public_route_table.id)
 
 # # Create an Elastic Beanstalk Environment and associate the Instance Profile
-eb_app1 = elasticbeanstalk.Application("eb-app",
-         name = "air_tek_app_1"
+eb_app2 = elasticbeanstalk.Application("eb-app",
+         name = "air_tek_app"
          )
 
-eb_env1 = elasticbeanstalk.Environment("eb-env2",
-     application= eb_app1.name,
+eb_env2 = elasticbeanstalk.Environment("eb-env",
+     application= eb_app2.name,
      solution_stack_name="64bit Amazon Linux 2023 v4.0.0 running Docker",
      settings=[
          aws.elasticbeanstalk.EnvironmentSettingArgs(
@@ -134,6 +139,7 @@ eb_env1 = elasticbeanstalk.Environment("eb-env2",
 
 pulumi.export('eb_role_id', eb_role.id)
 pulumi.export('instance_profile_id', eb_ip_role.id)
-pulumi.export('eb_env_id', eb_env1.id)
-pulumi.export('eb_env_url', eb_env1.endpoint_url)
+pulumi.export('eb_env_id', eb_env2.id)
+pulumi.export('eb_env_url', eb_env2.endpoint_url)
+pulumi.export('ip name', eb_instance_profile.name)
 # export('poll_interval_seconds', poll_interval.total_seconds())
